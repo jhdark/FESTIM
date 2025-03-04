@@ -16,6 +16,7 @@ from .boundary_conditions.dirichlet_bc import (
     FixedConcentrationBC,
     FixedTemperatureBC,
 )
+from .boundary_conditions.implantation_dirichlet import ImplantationDirichlet
 from .boundary_conditions.flux_bc import FluxBCBase, HeatFluxBC, ParticleFluxBC
 from .boundary_conditions.henrys_bc import HenrysBC
 from .boundary_conditions.sieverts_bc import SievertsBC
