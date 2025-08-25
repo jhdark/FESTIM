@@ -11,6 +11,7 @@ import numpy.typing as npt
 import tqdm.autonotebook
 import ufl
 from dolfinx import fem
+from packaging.version import Version
 from scifem import BlockedNewtonSolver
 
 import festim.boundary_conditions
@@ -1452,14 +1453,14 @@ class HydrogenTransportProblemDiscontinuous(HydrogenTransportProblem):
 
         n = ufl.FacetNormal(mesh)
         cr = ufl.Circumradius(mesh)
-        try:
-            from dolfinx.mesh import EntityMap  # noqa: F401
 
+        if Version(dolfinx.__version__) > Version("0.9.0"):
             entity_maps = [sd.cell_map for sd in self.volume_subdomains]
-        except ImportError:
+        else:
             entity_maps = {
                 sd.submesh: sd.parent_to_submesh for sd in self.volume_subdomains
             }
+
         for interface in self.interfaces:
             gamma = interface.penalty_term
 
@@ -1715,11 +1716,9 @@ class HydrogenTransportProblemDiscontinuous(HydrogenTransportProblem):
                     submesh_function = (
                         export.field.subdomain_to_post_processing_solution[export_vol]
                     )
-                    try:
-                        from dolfinx.mesh import EntityMap
-
+                    if Version(dolfinx.__version__) > Version("0.9.0"):
                         entity_maps = [sd.cell_map for sd in self.volume_subdomains]
-                    except ImportError:
+                    else:
                         entity_maps = {
                             sd.submesh: sd.parent_to_submesh
                             for sd in self.volume_subdomains
@@ -1733,11 +1732,9 @@ class HydrogenTransportProblemDiscontinuous(HydrogenTransportProblem):
 
             elif isinstance(export, exports.VolumeQuantity):
                 if isinstance(export, exports.TotalVolume | exports.AverageVolume):
-                    try:
-                        from dolfinx.mesh import EntityMap  # noqa: F401
-
+                    if Version(dolfinx.__version__) > Version("0.9.0"):
                         entity_maps = [sd.cell_map for sd in self.volume_subdomains]
-                    except ImportError:
+                    else:
                         entity_maps = {
                             sd.submesh: sd.parent_to_submesh
                             for sd in self.volume_subdomains
