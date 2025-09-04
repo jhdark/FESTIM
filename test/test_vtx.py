@@ -179,3 +179,14 @@ def test_filename_temp_raises_error_when_wrong_type():
     """Test that the filename attribute for VTXTemperature export raises an error if the extension is not .bp"""
     with pytest.raises(TypeError):
         F.VTXTemperatureExport(1)
+
+
+def test_subdomains_value_error(tmpdir):
+    """Test that the subdomain attribute raises an error if the type is not VolumeSubdomain"""
+    sp = F.Species("H")
+    sp.subdomain_to_solution = "coucou"
+
+    my_export = F.VTXSpeciesExport("my_export.bp", field=sp)
+
+    with pytest.raises(ValueError):
+        my_export.get_functions()
