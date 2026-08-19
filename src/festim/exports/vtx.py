@@ -532,7 +532,11 @@ class VTXInterfaceResidualExport(ExportBaseClass):
             # a uniform temperature raises "Found multiple domains" as soon as
             # E_K_S is non-zero (with E_K_S == 0 the temperature drops out of the
             # expression entirely and the clash never surfaces).
-            # TODO: unnecessary from 0.11, see update()
+            # NOTE: dolfinx 0.11 lets an Expression reference a foreign-mesh Constant,
+            # but only when the expression is evaluated on a codimension-0 submesh.
+            # This one lives on the interface (a facet submesh, codimension 1), where
+            # the same expression fails with "Expression was created on a different
+            # mesh. Cannot tabulate." So the mirror is still needed on 0.11.
             self._T = as_fenics_constant(
                 float(temperature_fenics.value), interface_submesh
             )
@@ -621,8 +625,13 @@ class VTXInterfaceResidualExport(ExportBaseClass):
         c_0 = self.field.subdomain_to_post_processing_solution[subdomain_0]
         c_1 = self.field.subdomain_to_post_processing_solution[subdomain_1]
 
-        # TODO: drop all this interpolation once 0.10 is unsupported: 0.11 takes
-        # parent-mesh functions directly in a submesh expression
+        # NOTE: this interpolation cannot be dropped on dolfinx 0.11. The feature
+        # that lets a submesh expression reference a function of another mesh only
+        # covers codimension-0 submeshes, and only when every coefficient Function
+        # in the expression lives on a single mesh. Here the residual is evaluated
+        # on the interface (a facet submesh, codimension 1) and c_0 / c_1 live on
+        # two different volume submeshes, so neither condition holds: building the
+        # expression succeeds but interpolating it segfaults.
         self._c_0_interface.interpolate_nonmatching(
             c_0, self._interface_cells, interpolation_data=self._interp_data_0
         )
