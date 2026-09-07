@@ -165,11 +165,9 @@ The recommended workflow is to mesh your geometry with your favourite meshing so
 GMSH example
 ------------
 
-The DOLFINx tutorial gives an `example <https://jsdokken.com/dolfinx-tutorial/chapter1/membrane_code.html#creating-the-mesh>`_ of mesh generation with gmsh, and additionally the GMSH reference manual can be accessed `here <https://gmsh.info/dev/doc/texinfo/gmsh.pdf>`_
+The DOLFINx tutorial gives an `example <https://jsdokken.com/dolfinx-tutorial/chapter1/membrane_code.html#creating-the-mesh>`_ of mesh generation with gmsh, and additionally the GMSH reference manual can be accessed `here <https://gmsh.info/dev/doc/texinfo/gmsh.pdf>`_.
 
-The following is a workflow using the python API to make a mesh that can be directly integrated into FESTIM:
-
-Here we will walk through GMSH's usage when creating a monoblock subsection consisting of tungsten surrounding a tube of CuCrZr
+The following is a workflow using the python API to make a mesh that can be directly integrated into FESTIM. Here we will walk through GMSH's usage when creating a monoblock subsection consisting of tungsten surrounding a tube of CuCrZr.
 
 .. figure:: ../images/gmsh_tut_1.png
     :width: 400
