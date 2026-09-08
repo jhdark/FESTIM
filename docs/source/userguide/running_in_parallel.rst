@@ -17,8 +17,9 @@ On the other hand, the arrays of the solution (``species.solution.x.array``) onl
 
     Not every feature of FESTIM supports parallel runs yet. In particular:
 
-    * Codimensional (manifold) subdomains lying *inside* the mesh (grain boundaries, interface layers, see :ref:`Codimensional (manifold) Subdomains`) cannot be used in parallel: ``initialise()`` raises an error as soon as the manifold crosses the boundary between two processes.
-      Manifolds lying on the outer boundary of the domain are not affected.
+    * Codimensional (manifold) subdomains lying *inside* the mesh (either manifolds through 
+      a single volume subdomain or along the interface between 2+ volume subdomains, see :ref:`Codimensional (manifold) Subdomains`) cannot be used in parallel: ``initialise()``
+      raises an error. Manifolds lying on the outer boundary of the domain are not affected.
     * :class:`festim.Profile1DExport` only collects the part of the profile owned by each process, without raising an error.
     * The ``filename`` of derived quantities (:class:`festim.SurfaceFlux`, :class:`festim.TotalVolume`...) is written by every process, so the CSV file contains duplicated rows.
       The ``value`` attribute of these exports is correct.
