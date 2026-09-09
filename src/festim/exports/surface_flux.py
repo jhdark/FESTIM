@@ -5,7 +5,7 @@ from dolfinx import fem
 from scifem import assemble_scalar
 
 from festim.exports.surface_quantity import SurfaceQuantity
-from festim.mesh import CoordinateSystem, Mesh
+from festim.mesh import CoordinateSystem
 from festim.species import Species
 from festim.subdomain.surface_subdomain import SurfaceSubdomain
 
@@ -25,7 +25,7 @@ class SurfaceFlux(SurfaceQuantity):
     field: Species
     surface: SurfaceSubdomain
     filename: str
-    mesh: Mesh
+    coordinate_system: CoordinateSystem
 
     title: str
     value: float
@@ -55,26 +55,24 @@ class SurfaceFlux(SurfaceQuantity):
         mesh = ds.ufl_domain()
         n = ufl.FacetNormal(mesh)
 
-        match self.mesh.coordinate_system:
+        match self.coordinate_system:
             case CoordinateSystem.CARTESIAN:
                 weight = 1
             case CoordinateSystem.CYLINDRICAL:
-                assert self.mesh.vdim == 1, (
-                    "SurfaceFlux in cylindrical coordinates is only implemented "
-                    "for 1D radial meshes"
-                )
                 r = ufl.SpatialCoordinate(mesh)[0]
-                weight = 2 * math.pi * r
+                # TODO: full coverage assumed; expose as a constructor parameter
+                # (e.g. azimuth_range) to support partial coverage
+                coverage = 2 * math.pi  # radians
+                weight = coverage * r
             case CoordinateSystem.SPHERICAL:
-                assert self.mesh.vdim == 1, (
-                    "SurfaceFlux in spherical coordinates is only implemented "
-                    "for 1D radial meshes"
-                )
                 r = ufl.SpatialCoordinate(mesh)[0]
-                weight = 4 * math.pi * r**2
+                # TODO: full coverage assumed; expose as constructor parameters
+                # (e.g. azimuth_range, polar_range) to support partial coverage
+                coverage = 4 * math.pi  # steradians
+                weight = coverage * r**2
             case _:
                 raise NotImplementedError(
-                    f"Unknown coordinate system {self.mesh.coordinate_system!s}"
+                    f"Unknown coordinate system {self.coordinate_system!s}"
                 )
 
         self.value = assemble_scalar(

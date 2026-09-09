@@ -1,3 +1,5 @@
+import math
+
 import numpy as np
 
 import festim as F
@@ -63,6 +65,72 @@ def test_run_MMS_cylindrical():
     L2_error = error_L2(computed_solution, u_exact)
 
     assert L2_error < 1e-6
+
+
+def test_surface_flux_cylindrical():
+    """Tests that SurfaceFlux computes the correct flux in cylindrical coordinates,
+    on a 1D radial mesh.
+
+    Uses the analytical solution for steady-state diffusion through a cylindrical
+    shell with no source: u(r) = (C1/D) * ln(r) + C2, solved for fixed
+    concentrations c1, c2 at the inner and outer radii r1, r2. The total flux
+    (per unit axial length) through any cylindrical shell, Q = -2 * pi * C1, is
+    constant in r (steady-state conservation with no source), so the inner and
+    outer surface fluxes should be equal and opposite.
+
+    TODO: add a 2D (r, z) axisymmetric version of this test, including a case
+    where the tagged surface isn't aligned with the mesh axes.
+    """
+
+    r1, r2 = 1.0, 2.0
+    c1, c2 = 10.0, 2.0
+    D = 2.0
+
+    my_mesh = F.Mesh1D(
+        vertices=np.linspace(r1, r2, 1000), coordinate_system="cylindrical"
+    )
+
+    my_mat = F.Material(D_0=D, E_D=0)
+
+    left = F.SurfaceSubdomain1D(id=1, x=r1)
+    right = F.SurfaceSubdomain1D(id=2, x=r2)
+    my_vol = F.VolumeSubdomain1D(id=3, borders=[r1, r2], material=my_mat)
+
+    H = F.Species("H")
+
+    my_bcs = [
+        F.FixedConcentrationBC(subdomain=left, value=c1, species=H),
+        F.FixedConcentrationBC(subdomain=right, value=c2, species=H),
+    ]
+
+    flux_left = F.SurfaceFlux(field=H, surface=left)
+    flux_right = F.SurfaceFlux(field=H, surface=right)
+
+    my_settings = F.Settings(
+        atol=1e-10,
+        rtol=1e-9,
+        max_iterations=50,
+        transient=False,
+    )
+
+    my_sim = F.HydrogenTransportProblem(
+        mesh=my_mesh,
+        species=[H],
+        subdomains=[my_vol, left, right],
+        boundary_conditions=my_bcs,
+        temperature=500,
+        exports=[flux_left, flux_right],
+        settings=my_settings,
+    )
+
+    my_sim.initialise()
+    my_sim.run()
+
+    C1 = D * (c1 - c2) / math.log(r1 / r2)
+    expected_flux_magnitude = abs(2 * math.pi * C1)
+
+    assert np.isclose(flux_left.value, -expected_flux_magnitude, rtol=1e-2)
+    assert np.isclose(flux_right.value, expected_flux_magnitude, rtol=1e-2)
 
 
 def test_run_MMS_cylindrical_mixed_domain():
