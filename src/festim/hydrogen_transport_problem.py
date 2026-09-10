@@ -553,8 +553,12 @@ class HydrogenTransportProblem(problem.ProblemBase):
 
             elif isinstance(export, exports.DerivedQuantity):
                 # raise not implemented error if the derived quantity don't match the
-                # type of mesh eg. SurfaceFlux is used with cylindrical mesh
-                if self.mesh.coordinate_system != CoordinateSystem.CARTESIAN:
+                # type of mesh eg. TotalVolume is not implemented for cylindrical
+                # or spherical meshes. SurfaceFlux supports all coordinate systems.
+                if (
+                    self.mesh.coordinate_system != CoordinateSystem.CARTESIAN
+                    and not isinstance(export, exports.SurfaceFlux)
+                ):
                     raise NotImplementedError(
                         f"Derived quantity exports are not implemented for "
                         f"{self.mesh.coordinate_system!s} meshes"
@@ -597,6 +601,7 @@ class HydrogenTransportProblem(problem.ProblemBase):
                 # add the global D to the export
                 export.D = self._species_to_D_global.get(export.field)
                 export.D_expr = self._species_to_D_global_expr.get(export.field)
+                export.coordinate_system = self.mesh.coordinate_system
             # a model without drift terms must not pay for the surface-to-volume
             # lookup, which needs meshtags this one does not otherwise require
             if self.drift_terms and isinstance(export, exports.SurfaceFlux):
@@ -3232,6 +3237,7 @@ class HydrogenTransportProblemDiscontinuous(HydrogenTransportProblem):
                 # NOTE: maybe we need to make sure there are no functionspace clashes?
 
                 export.D = D
+                export.coordinate_system = self.mesh.coordinate_system
 
                 if self.drift_terms and isinstance(export, exports.SurfaceFlux):
                     export.drift_velocity = self.drift_velocity_in(
