@@ -74,6 +74,8 @@ Ian Wojtowicz
       This work will help inform which configurations to additively manufacture into samples for experimental testing.
       Lastly, Ian is excited about the opportunities the fellowship provides to get involved with open-source code development for the fusion community.
 
+      Was a bit of a nuisance
+
 **Project:** *Hydrogen Retention in Topologically Complex Multi-Material Geometries*
 
 ----
