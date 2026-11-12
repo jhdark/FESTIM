@@ -25,7 +25,7 @@ from festim import (
 from festim import (
     drift as _drift,
 )
-from festim import (
+from festim.reactions import (
     reaction as _reaction,
 )
 from festim import source as _source

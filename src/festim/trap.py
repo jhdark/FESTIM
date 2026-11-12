@@ -1,4 +1,4 @@
-from festim.reaction import ArrheniusReaction as _ArrheniusReaction
+from festim.reactions.reaction import ArrheniusReaction as _ArrheniusReaction
 from festim.species import ImplicitSpecies as _ImplicitSpecies
 from festim.species import Species as _Species
 

@@ -9,7 +9,7 @@ import ufl
 from dolfinx import fem
 
 from festim import k_B as _k_B
-from festim.reaction import ArrheniusReaction
+from festim.reactions.reaction import ArrheniusReaction
 from festim.species import ImplicitSpecies, Species
 from festim.subdomain.volume_subdomain import VolumeSubdomain
 

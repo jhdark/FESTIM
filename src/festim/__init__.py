@@ -88,12 +88,18 @@ from .mesh.mesh_1d import Mesh1D
 from .mesh.mesh_from_xdmf import MeshFromXDMF
 from .plotting import plot
 from .problem import ProblemBase
-from .reaction import (
+from .reactions.reaction import (
     ArrheniusReaction,
     DecayReaction,
     GenericReaction,
     Reaction,
     ReactionBase,
+)
+from .reactions.hydride_reactions import (
+    HydrideDissolution,
+    HydrideGrowth,
+    HydrideNucleation,
+    HydrideReaction,
 )
 from .settings import Settings
 from .source import HeatSource, ParticleSource, SourceBase
