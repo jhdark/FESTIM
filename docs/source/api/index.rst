@@ -59,7 +59,11 @@ API reference
     :members:
     :show-inheritance:
 
-.. automodule:: festim.reaction
+.. automodule:: festim.reactions.reaction
+    :members:
+    :show-inheritance:
+
+.. automodule:: festim.reactions.hydride_reactions
     :members:
     :show-inheritance:
 
