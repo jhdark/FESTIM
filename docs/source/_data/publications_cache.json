@@ -12,7 +12,7 @@
     ],
     "journal": "International Journal of Hydrogen Energy",
     "year": 2024,
-    "cited_by": 32,
+    "cited_by": 38,
     "oa_url": "https://doi.org/10.1016/j.ijhydene.2024.03.184",
     "topics": [
       "Fusion materials and technologies",
@@ -20,7 +20,7 @@
       "Nuclear Materials and Properties"
     ],
     "type": "article",
-    "_cached_at": 1791553699.3179765
+    "_cached_at": 1794349757.2540114
   },
   "10.1016/j.nme.2019.100709": {
     "doi": "10.1016/j.nme.2019.100709",
@@ -34,7 +34,7 @@
     ],
     "journal": "Nuclear Materials and Energy",
     "year": 2019,
-    "cited_by": 46,
+    "cited_by": 49,
     "oa_url": "https://www.sciencedirect.com/science/article/pii/S2352179119300547/pdf",
     "topics": [
       "Fusion materials and technologies",
@@ -42,7 +42,7 @@
       "Nuclear Materials and Properties"
     ],
     "type": "article",
-    "_cached_at": 1791553699.5593753
+    "_cached_at": 1794349757.3939872
   },
   "10.1016/j.nme.2021.100984": {
     "doi": "10.1016/j.nme.2021.100984",
@@ -56,7 +56,7 @@
     ],
     "journal": "Nuclear Materials and Energy",
     "year": 2021,
-    "cited_by": 16,
+    "cited_by": 17,
     "oa_url": "https://www.sciencedirect.com/science/article/pii/S2352179121000661/pdf",
     "topics": [
       "Fusion materials and technologies",
@@ -64,7 +64,7 @@
       "Nuclear Materials and Properties"
     ],
     "type": "article",
-    "_cached_at": 1791553699.9461293
+    "_cached_at": 1794349757.5187678
   },
   "10.1088/1741-4326/ac28b0": {
     "doi": "10.1088/1741-4326/ac28b0",
@@ -79,7 +79,7 @@
     ],
     "journal": "Nuclear Fusion",
     "year": 2021,
-    "cited_by": 18,
+    "cited_by": 23,
     "oa_url": "https://iopscience.iop.org/article/10.1088/1741-4326/ac28b0/pdf",
     "topics": [
       "Fusion materials and technologies",
@@ -87,7 +87,7 @@
       "Nuclear reactor physics and engineering"
     ],
     "type": "article",
-    "_cached_at": 1791553700.2081134
+    "_cached_at": 1794349757.653821
   },
   "10.1088/1741-4326/ad1019": {
     "doi": "10.1088/1741-4326/ad1019",
@@ -110,7 +110,7 @@
       "Superconducting Materials and Applications"
     ],
     "type": "article",
-    "_cached_at": 1791553700.470412
+    "_cached_at": 1794349757.773047
   },
   "10.1088/1741-4326/ac2bbd": {
     "doi": "10.1088/1741-4326/ac2bbd",
@@ -131,7 +131,7 @@
     ],
     "journal": "Nuclear Fusion",
     "year": 2021,
-    "cited_by": 18,
+    "cited_by": 21,
     "oa_url": "https://iopscience.iop.org/article/10.1088/1741-4326/ac2bbd/pdf",
     "topics": [
       "Fusion materials and technologies",
@@ -139,7 +139,7 @@
       "Fusion and Plasma Physics Studies"
     ],
     "type": "article",
-    "_cached_at": 1791553700.8514633
+    "_cached_at": 1794349757.926119
   },
   "10.1088/1741-4326/ac2abc": {
     "doi": "10.1088/1741-4326/ac2abc",
@@ -161,7 +161,7 @@
     ],
     "journal": "Nuclear Fusion",
     "year": 2021,
-    "cited_by": 32,
+    "cited_by": 34,
     "oa_url": "https://iopscience.iop.org/article/10.1088/1741-4326/ac2abc/pdf",
     "topics": [
       "Fusion materials and technologies",
@@ -169,7 +169,7 @@
       "Nuclear Materials and Properties"
     ],
     "type": "article",
-    "_cached_at": 1791553701.1264331
+    "_cached_at": 1794349758.065404
   },
   "10.1038/s41598-020-74844-w": {
     "doi": "10.1038/s41598-020-74844-w",
@@ -192,11 +192,11 @@
       "Fusion and Plasma Physics Studies"
     ],
     "type": "article",
-    "_cached_at": 1791553701.4497643
+    "_cached_at": 1794349758.1824186
   },
   "10.48550/arXiv.2604.04751": {
     "doi": "10.48550/arXiv.2604.04751",
-    "title": "Hydrogen Inventory Simulations for PFCs (HISP)",
+    "title": "Hydrogen inventory simulations for PFCs (HISP)",
     "authors": [
       "Kaelyn Dunnell",
       "Adria Lleal",
@@ -205,17 +205,17 @@
       "Rémi Delaporte-Mathurin",
       "T. Wauters"
     ],
-    "journal": "arXiv (Cornell University)",
+    "journal": "Nuclear Materials and Energy",
     "year": 2026,
-    "cited_by": 0,
-    "oa_url": "https://doi.org/10.48550/arxiv.2604.04751",
+    "cited_by": 1,
+    "oa_url": "https://doi.org/10.1016/j.nme.2026.102153",
     "topics": [
       "Fusion materials and technologies",
       "Magnetic confinement fusion research",
       "Superconducting Materials and Applications"
     ],
-    "type": "preprint",
-    "_cached_at": 1791553701.7025642
+    "type": "article",
+    "_cached_at": 1794349758.3111546
   },
   "10.48550/arxiv.2603.25751": {
     "doi": "10.48550/arxiv.2603.25751",
@@ -226,11 +226,11 @@
       "James Dark",
       "Milan Rother",
       "Tasnim Zulfiqar",
-      "Kevin B Woller"
+      "Kevin Benjamin Woller"
     ],
     "journal": "arXiv (Cornell University)",
     "year": 2026,
-    "cited_by": 0,
+    "cited_by": 2,
     "oa_url": "https://arxiv.org/pdf/2603.25751",
     "topics": [
       "Fusion materials and technologies",
@@ -238,7 +238,7 @@
       "Magnetic confinement fusion research"
     ],
     "type": "preprint",
-    "_cached_at": 1791553702.1611385
+    "_cached_at": 1794349758.5550735
   },
   "10.1016/j.ijhydene.2026.153987": {
     "doi": "10.1016/j.ijhydene.2026.153987",
@@ -254,11 +254,11 @@
       "Vladimir Kulagin",
       "Samuele Meschini",
       "Jonathan Dufour",
-      "Etienne A. Hodille"
+      "Etienne Augustin Hodille"
     ],
     "journal": "International Journal of Hydrogen Energy",
     "year": 2026,
-    "cited_by": 2,
+    "cited_by": 8,
     "oa_url": "https://doi.org/10.1016/j.ijhydene.2026.153987",
     "topics": [
       "Fusion materials and technologies",
@@ -266,7 +266,7 @@
       "Nuclear Materials and Properties"
     ],
     "type": "article",
-    "_cached_at": 1791553702.399407
+    "_cached_at": 1794349758.6766362
   },
   "10.1088/1741-4326/ae4110": {
     "doi": "10.1088/1741-4326/ae4110",
@@ -292,7 +292,7 @@
       "Magnetic confinement fusion research"
     ],
     "type": "article",
-    "_cached_at": 1791553702.8372111
+    "_cached_at": 1794349758.8023183
   },
   "10.1016/j.ijhydene.2025.153245": {
     "doi": "10.1016/j.ijhydene.2025.153245",
@@ -307,7 +307,7 @@
     ],
     "journal": "International Journal of Hydrogen Energy",
     "year": 2026,
-    "cited_by": 5,
+    "cited_by": 9,
     "oa_url": "https://doi.org/10.1016/j.ijhydene.2025.153245",
     "topics": [
       "Fusion materials and technologies",
@@ -315,7 +315,7 @@
       "Nuclear Materials and Properties"
     ],
     "type": "article",
-    "_cached_at": 1791553703.078773
+    "_cached_at": 1794349758.9187438
   },
   "10.1088/1741-4326/adacfa": {
     "doi": "10.1088/1741-4326/adacfa",
@@ -328,7 +328,7 @@
     ],
     "journal": "Nuclear Fusion",
     "year": 2025,
-    "cited_by": 13,
+    "cited_by": 19,
     "oa_url": "https://doi.org/10.1088/1741-4326/adacfa",
     "topics": [
       "Fusion materials and technologies",
@@ -336,7 +336,7 @@
       "Nuclear reactor physics and engineering"
     ],
     "type": "article",
-    "_cached_at": 1791553703.3436732
+    "_cached_at": 1794349759.0650702
   },
   "10.1016/j.ijhydene.2025.02.128": {
     "doi": "10.1016/j.ijhydene.2025.02.128",
@@ -349,15 +349,15 @@
     ],
     "journal": "International Journal of Hydrogen Energy",
     "year": 2024,
-    "cited_by": 2,
-    "oa_url": null,
+    "cited_by": 3,
+    "oa_url": "https://arxiv.org/pdf/2411.16474",
     "topics": [
       "Fusion materials and technologies",
       "Hydrogen Storage and Materials",
       "Hydrogen embrittlement and corrosion behaviors in metals"
     ],
     "type": "article",
-    "_cached_at": 1791553703.509276
+    "_cached_at": 1794349759.2682695
   },
   "10.1088/1741-4326/ad56a0": {
     "doi": "10.1088/1741-4326/ad56a0",
@@ -373,7 +373,7 @@
     ],
     "journal": "Nuclear Fusion",
     "year": 2024,
-    "cited_by": 12,
+    "cited_by": 20,
     "oa_url": "https://doi.org/10.1088/1741-4326/ad56a0",
     "topics": [
       "Fusion materials and technologies",
@@ -381,7 +381,7 @@
       "Nuclear Materials and Properties"
     ],
     "type": "article",
-    "_cached_at": 1791553703.7702262
+    "_cached_at": 1794349759.4632707
   },
   "10.1088/1741-4326/abd95f": {
     "doi": "10.1088/1741-4326/abd95f",
@@ -397,7 +397,7 @@
     ],
     "journal": "Nuclear Fusion",
     "year": 2021,
-    "cited_by": 31,
+    "cited_by": 32,
     "oa_url": "https://hal.science/hal-03188511",
     "topics": [
       "Fusion materials and technologies",
@@ -405,7 +405,7 @@
       "Magnetic confinement fusion research"
     ],
     "type": "article",
-    "_cached_at": 1791553704.0157943
+    "_cached_at": 1794349759.5845282
   },
   "10.5281/zenodo.19596859": {
     "doi": "10.5281/zenodo.19596859",
@@ -441,13 +441,13 @@
       "Prashanth Srinivasan",
       "S.M. Dixon",
       "Sid Mungale",
-      "Teresa Orr",
+      "Teresa Catherine Orr",
       "M. Yu. Lavrentiev",
-      "D. Nguyen-Manh"
+      "Duc Nguyen Manh"
     ],
     "journal": "Physical Review Materials",
     "year": 2025,
-    "cited_by": 3,
+    "cited_by": 4,
     "oa_url": "https://doi.org/10.1103/nbwm-bs8m",
     "topics": [
       "Fusion materials and technologies",
@@ -455,7 +455,7 @@
       "Hydrogen Storage and Materials"
     ],
     "type": "article",
-    "_cached_at": 1791553704.552544
+    "_cached_at": 1794349759.7077768
   },
   "10.1016/j.nme.2026.102153": {
     "doi": "10.1016/j.nme.2026.102153",
@@ -478,7 +478,7 @@
       "Superconducting Materials and Applications"
     ],
     "type": "article",
-    "_cached_at": 1791553704.7848828
+    "_cached_at": 1794349759.8194501
   },
   "title:Hydrogen transport in tokamaks : Estimation of the ITER divertor tritium inventory and influence of helium exposure": {
     "doi": "10.13140/rg.2.2.19774.97606",
@@ -486,17 +486,17 @@
     "authors": [
       "Rémi Delaporte-Mathurin"
     ],
-    "journal": "PhD thesis, HAL (Le Centre pour la Communication Scientifique Directe)",
+    "journal": "PhD thesis, theses.fr (ABES)",
     "year": 2022,
     "cited_by": 1,
-    "oa_url": "https://doi.org/10.13140/rg.2.2.19774.97606",
+    "oa_url": "http://www.theses.fr/2022PA131054/document",
     "topics": [
       "Fusion materials and technologies",
       "Magnetic confinement fusion research",
       "Nuclear Materials and Properties"
     ],
     "type": "thesis",
-    "_cached_at": 1791553706.4109273
+    "_cached_at": 1794349761.275116
   },
   "openalex:W7152043806": {
     "doi": "10.70675/8f2b4408z7316z4985za755z16358de9cafa",
@@ -507,14 +507,14 @@
     "journal": "PhD thesis, Université Sorbonne Paris Nord",
     "year": 2024,
     "cited_by": 0,
-    "oa_url": null,
+    "oa_url": "https://theses.hal.science/tel-04906459v1/file/edgalilee_th_2024_dark.pdf",
     "topics": [
       "Fusion materials and technologies",
       "Nuclear reactor physics and engineering",
       "Magnetic confinement fusion research"
     ],
     "type": "thesis",
-    "_cached_at": 1791553706.651904
+    "_cached_at": 1794349761.3938854
   },
   "openalex:W7039523697": {
     "doi": "",
@@ -532,7 +532,7 @@
       "Molten salt chemistry and electrochemical processes"
     ],
     "type": "thesis",
-    "_cached_at": 1791553706.8216846
+    "_cached_at": 1794349761.5163214
   },
   "10.1016/j.nme.2025.102026": {
     "doi": "10.1016/j.nme.2025.102026",
@@ -552,7 +552,7 @@
       "Nuclear Materials and Properties"
     ],
     "type": "article",
-    "_cached_at": 1791553707.0553765
+    "_cached_at": 1794349761.6395288
   },
   "10.48550/arXiv.2605.12750": {
     "doi": "10.48550/arXiv.2605.12750",
@@ -561,7 +561,7 @@
       "Huihua Yang",
       "Abhishek Saraswat",
       "Weiyue Zhou",
-      "Kevin Woller",
+      "Kevin Benjamin Woller",
       "James Dark",
       "Chirag Khurana",
       "Kaelyn Dunnell",
@@ -570,15 +570,15 @@
     ],
     "journal": "arXiv (Cornell University)",
     "year": 2026,
-    "cited_by": 0,
-    "oa_url": "https://doi.org/10.48550/arxiv.2605.12750",
+    "cited_by": 1,
+    "oa_url": "https://arxiv.org/pdf/2605.12750",
     "topics": [
       "Fusion materials and technologies",
       "Molten salt chemistry and electrochemical processes",
       "Nuclear reactor physics and engineering"
     ],
     "type": "preprint",
-    "_cached_at": 1791553707.314338
+    "_cached_at": 1794349761.7630117
   },
   "openalex:W7164459034": {
     "doi": "",
@@ -596,7 +596,7 @@
       "Nuclear reactor physics and engineering"
     ],
     "type": "thesis",
-    "_cached_at": 1791553707.5414062
+    "_cached_at": 1794349761.8563638
   },
   "10.1080/15361055.2026.2686572": {
     "doi": "10.1080/15361055.2026.2686572",
@@ -617,7 +617,7 @@
       "Nuclear Materials and Properties"
     ],
     "type": "article",
-    "_cached_at": 1791553707.7952247
+    "_cached_at": 1794349761.9790425
   },
   "10.1103/lnnc-h1yy": {
     "doi": "10.1103/lnnc-h1yy",
@@ -657,14 +657,125 @@
     ],
     "journal": "International Journal of Hydrogen Energy",
     "year": 2026,
-    "cited_by": 1,
-    "oa_url": "https://arxiv.org/pdf/2603.28991",
+    "cited_by": 3,
+    "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13341167/",
     "topics": [
       "Molten salt chemistry and electrochemical processes",
       "Fusion materials and technologies",
       "Nuclear reactor physics and engineering"
     ],
     "type": "article",
-    "_cached_at": 1791553701.8899899
+    "_cached_at": 1794349758.4339948
+  },
+  "10.1016/j.ijhydene.2026.158073": {
+    "doi": "10.1016/j.ijhydene.2026.158073",
+    "title": "Native hydrogen content of stainless steel pipework",
+    "authors": [
+      "J.A. Pittard",
+      "Kyle Shipman",
+      "Zhiheng Wu",
+      "Tshepo Mahafa",
+      "Gowri Karajgikar",
+      "Rosemary Brown",
+      "Rachel Lawless",
+      "Iryna Bennett"
+    ],
+    "journal": "International Journal of Hydrogen Energy",
+    "year": 2026,
+    "cited_by": 0,
+    "oa_url": null,
+    "topics": [
+      "Hydrogen embrittlement and corrosion behaviors in metals",
+      "Fusion materials and technologies",
+      "Hydrogen Storage and Materials"
+    ],
+    "type": "article",
+    "_cached_at": 1794349759.9412167
+  },
+  "10.1016/j.actamat.2026.122882": {
+    "doi": "10.1016/j.actamat.2026.122882",
+    "title": "Damage incubation and evolution in tungsten under BR2 neutron irradiation: Insights into the role of rhenium",
+    "authors": [
+      "Xiaoou Yi",
+      "Kenta Yoshida",
+      "Tatsuya Kuwabara",
+      "Shiwei Wang",
+      "Koji Inoue",
+      "Minshen Hu",
+      "Sichen Dong",
+      "Long Cheng",
+      "Azusa Matsumoto",
+      "Hui Liu",
+      "Somei Ohnuki",
+      "Akira Hasegawa",
+      "Hanqing Wang",
+      "Katsuya Suzuki",
+      "Wentuo Han",
+      "P. Liu",
+      "T. Toyama",
+      "Yuji Hatano",
+      "Qian Zhan",
+      "Farong Wan",
+      "Yue Yuan",
+      "Guang-Hong Lu"
+    ],
+    "journal": "Acta Materialia",
+    "year": 2026,
+    "cited_by": 0,
+    "oa_url": null,
+    "topics": [
+      "Fusion materials and technologies",
+      "Nuclear Materials and Properties",
+      "Nuclear materials and radiation effects"
+    ],
+    "type": "article",
+    "_cached_at": 1794349760.0543172
+  },
+  "10.48550/arXiv.2608.05398": {
+    "doi": "10.48550/arXiv.2608.05398",
+    "title": "Multiphysics tritium transport modelling of the ARC breeding blanket with FESTIM",
+    "authors": [
+      "James Dark",
+      "Arpan Sircar",
+      "Jin Whan Bae",
+      "Jørgen S. Dokken",
+      "Rémi Delaporte-Mathurin"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "year": 2026,
+    "cited_by": 1,
+    "oa_url": "https://arxiv.org/pdf/2608.05398",
+    "topics": [
+      "Fusion materials and technologies",
+      "Nuclear reactor physics and engineering",
+      "Magnetic confinement fusion research"
+    ],
+    "type": "preprint",
+    "_cached_at": 1794349760.1938536
+  },
+  "10.1080/15361055.2026.2746829": {
+    "doi": "10.1080/15361055.2026.2746829",
+    "title": "Coupled CFD and Tritium Transport Modeling of a Permeator Probe for Tritium Concentration in Liquids",
+    "authors": [
+      "Kaelyn Dunnell",
+      "James Dark",
+      "Colin Weaver",
+      "Jr Jordan",
+      "Chirag Khurana",
+      "Huihua Yang",
+      "Shaheen Dewji",
+      "Rémi Delaporte-Mathurin"
+    ],
+    "journal": "Fusion Science & Technology",
+    "year": 2026,
+    "cited_by": 0,
+    "oa_url": "https://www.tandfonline.com/doi/pdf/10.1080/15361055.2026.2746829?needAccess=true",
+    "topics": [
+      "Fusion materials and technologies",
+      "Magnetic confinement fusion research",
+      "Nuclear reactor physics and engineering"
+    ],
+    "type": "article",
+    "_cached_at": 1794349760.321105
   }
 }
